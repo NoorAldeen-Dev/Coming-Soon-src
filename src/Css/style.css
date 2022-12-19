@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: webfont;
+    src: url(../fonts/Cairo-SemiBold.ttf);
+}
+@font-face{
+    font-family: webfont2;
+    src: url(../fonts/NotoSans-SemiBold.ttf);
+}
+body{
+    direction: rtl;
+    font-family: webfont;
+}
+header{
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .brand{
+    margin: 100px auto 60px;
+    display: inline-block;
+    padding-bottom: 35px;
+    border-bottom: 5px solid #474c54;
+}
+header .heading-page h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    line-height: 85px;
+}
+header .heading-page p {
+    font-size: 18px;
+    color: #acacac;
+    line-height: 25px;
+    width: 40%;
+    margin: auto;
+}
+header .count-down{
+    margin: 90px auto;
+}
+header .count-down .countdown-section{
+    display: inline-block;
+    margin: auto 30px;
+}
+header .count-down .countdown-period{
+    display:block;
+    color: white;
+    font-size:30px;
+}
+header .count-down .countdown-amount{
+    color: #ffce00;
+    font-size: 60px;
+
+}
+header .send p{
+    font-size: 18px;
+    color: white;
+}
+header .input-group{
+    width: 400px;
+    margin: auto ;
+    transform: translateY(30%);
+}
+header .send .input-group button{
+    padding: 13px 33px;
+    background-color: #ffce00;
+
+}
+header .send .input-group button:hover{
+    background-color:#dab319 ;
+    
+}
+header .send .input-group input{
+    border: 2px solid #e6e6e6;
+    font-size: 18px;
+    color: #e6e6e6;
+    text-align: right;
+}
+.invalid-feedback{
+    margin-bottom: -30px;
+}
+main .features{
+    padding:100px 0;
+}
+main .features h2{
+    color: #555;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+main .features .row .d-flex{
+    margin-bottom: 25px;
+    border: 4px solid #fafafa;
+    padding: 40px 10px;
+    height:210px ;
+    justify-content: center;
+    align-items: center;
+}
+main .features .row .d-flex h4{
+    color: #555;
+    font-size: 22px;
+}
+main .features .row .d-flex p{
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 25px;
+}
+main .features .row .col-lg-6:nth-child(even){
+    direction: ltr;
+}
+footer{
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+footer .footer-not{
+    background-color: rgba(255, 206, 0, 0.7);
+    padding: 70px 0;
+
+}
+footer .footer-not h3{
+    font-size: 30px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+footer .input-group{
+    width: 400px;
+    margin: auto;
+}
+footer .input-group input
+{
+    font-size: 18px;
+    color: #c7c7c7;
+    border-color: white;
+    text-align: right;
+}
+footer .footer-not button{
+    background-color: #393939;
+    padding: 13px 33px;
+}
+footer .footer-not button:hover{
+    background-color: #201f1f !important;
+}
+footer .footer-soc{
+    background-color: rgba(57, 57, 57, .9);
+    padding:100px 0 30px ;
+}
+footer .footer-soc h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+footer .footer-soc li a{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.14);
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+footer .footer-soc li a:hover{
+    background-color: #fad32f;
+    color: rgba(57, 57, 57, .9);
+}
+footer .footer-soc hr{
+    width: 25%;
+    margin: 50px auto 30px;
+}
+footer .footer-soc .email{
+    color: #b4b4b4;
+    text-decoration: none;
+}
+footer .footer-soc .email i{
+    color: #ffce00;
+    margin-left: 5px;
+}
+@media (max-width: 992px){
+    header .heading-page p{
+        width: 70%;
+    }
+    main .features .row .d-flex{
+        height:150px;
+    }
+    main .features .row .d-flex h4{
+        font-size: 20px;
+    }
+}
+@media (max-width:576px){
+    header .heading-page h1{
+        font-size: 45px;
+    }
+    header .heading-page p {
+        width: 90%;
+    }
+    header .input-group,
+    footer .input-group{
+        width: 268px;
+    }
+    header .send .input-group button,
+    footer .footer-not button{
+        padding: 7px 22px;
+    }
+    header .heading-page h1{
+        font-size: 30px;
+    }
+    header .heading-page p {
+        font-size: 14px;
+    }
+    .countdown-section{
+        margin-bottom: 20px !important;
+    }
+    main .features h2{
+        font-size: 30px;
+    }
+    main .features .row .d-flex {
+        height: 190px;
+    }
+    main .features .row .d-flex h4{
+        font-size: 18px;
+        
+    }
+    main .features .row .d-flex p{
+        font-size: 12px;
+    }
+    footer .footer-not h3,footer .footer-soc h3{
+        font-size: 18px;
+    }
+    footer .footer-soc li a{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+}
